@@ -1,24 +1,5 @@
 {
-  "productList": [
-    {
-      "productName": "a",
-      "category": "Vegetable",
-      "freshness": "Brand New",
-      "price": 1,
-      "date": "2022-04-03T17:00:00.000Z",
-      "comment": "a",
-      "id": 1
-    },
-    {
-      "productName": "b",
-      "category": "Electronic",
-      "freshness": "Second Hand",
-      "price": 2,
-      "date": "2022-04-28T17:00:00.000Z",
-      "comment": "b",
-      "id": 2
-    }
-  ],
+  "productList": [],
   "comments": [
     {
       "id": 1,

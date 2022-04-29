@@ -47,15 +47,17 @@ export class AppComponent implements OnInit {
       })
   }
   deleteProduct(row: any) {
-    this.api.deleteProduct(row.id).subscribe({
-      next: () =>{
-        alert("Delete Success")
-        this.getAllProduct()
-      },
-      error:()=>{
-        alert("Delete Error")
-      }
-    })
+    if(confirm("Delete " + row.productName)){
+      this.api.deleteProduct(row.id).subscribe({
+        next: () =>{
+          alert("Delete Success")
+          this.getAllProduct()
+        },
+        error:()=>{
+          alert("Delete Error")
+        }
+      })
+    }
   }
   editProduct(row: any) {
     this.dialog.open(DialogComponent, {
